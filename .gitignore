@@ -1,4 +1,7 @@
+# Directories
 .idea/
+
+# Files
 Pipfile
 Pipfile.lock
 db.sqlite3
