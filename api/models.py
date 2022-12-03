@@ -55,5 +55,10 @@ class Words(models.Model):
 
     last_update = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.word_in_japanese}"
+
     class Meta:
         ordering = ['part_of_speech']
+        verbose_name = 'words'
+        verbose_name_plural = 'words'
