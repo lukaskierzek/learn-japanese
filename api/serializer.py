@@ -3,6 +3,11 @@ from rest_framework import serializers
 
 
 class WordsSerializer(serializers.ModelSerializer):
+    part_of_speech = serializers.ChoiceField(
+        source='get_part_of_speech_display',
+        choices=Words.PARTH_OF_SPEECH_CATEGORIES
+    )
+
     class Meta:
         model = Words
         fields = [
