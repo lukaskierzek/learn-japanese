@@ -6,7 +6,7 @@ from django.db import models
 class Words(models.Model):
     word_in_japanese = models.CharField(
         max_length=50,
-        help_text="Enter a word in japanese",
+        help_text="Enter a word in Japanese",
         verbose_name='Japanese word'
     )
 
@@ -18,15 +18,15 @@ class Words(models.Model):
 
     sentence_in_japanese = models.CharField(
         max_length=150,
-        help_text="Enter a sentence in japanese",
+        help_text="Enter a sentence in Japanese with the word in Japanese",
         verbose_name="Japanese sentence",
         blank=True
     )
 
     sentence = models.CharField(
         max_length=250,
-        help_text="Enter translation",
-        verbose_name="Japanese the sentence translation",
+        help_text="Enter the sentence translation",
+        verbose_name="Sentence translation",
         blank=True
     )
 
