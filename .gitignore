@@ -1,5 +1,8 @@
 # Directories
 .idea/
+__pycache__/
+api/__pycache__/
+learn_japanese/__pycache__/
 
 # Files
 Pipfile
