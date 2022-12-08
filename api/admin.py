@@ -12,11 +12,13 @@ class WordsAdmin(admin.ModelAdmin):
         "sentence_in_japanese",
         "sentence",
         "part_of_speech",
+        "has_kanji",
         "last_update",
     )
 
     list_filter = (
         "part_of_speech",
+        "has_kanji",
     )
 
     search_fields = [
