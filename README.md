@@ -16,5 +16,5 @@ Explanation of the database:
 - sentence_in_japanese: sentence in Japanese with the word in Japanese,
 - sentence: translated sentence in your native language,
 - part_of_speech: part of speech word in Japanese,
-- has_kanji: checkbox if there is a kanji character in the word in Japanese,
-- last_update: last update of the word (time of the last update created by database).
+- last_update: last update of the word (time of the last update created by database),
+- has_kanji: checkbox if there is a kanji character in the word in Japanese.
