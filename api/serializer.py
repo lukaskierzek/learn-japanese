@@ -3,12 +3,6 @@ from rest_framework import serializers
 
 
 class WordsSerializer(serializers.ModelSerializer):
-    part_of_speech = serializers.ChoiceField(
-        source='get_part_of_speech_display',
-        choices=Words.PARTH_OF_SPEECH_CATEGORIES,
-        default=Words.IDK
-    )
-
     class Meta:
         model = Words
         fields = [
@@ -18,5 +12,6 @@ class WordsSerializer(serializers.ModelSerializer):
             "sentence_in_japanese",
             "sentence",
             "part_of_speech",
+            "has_kanji",
             "last_update",
         ]
